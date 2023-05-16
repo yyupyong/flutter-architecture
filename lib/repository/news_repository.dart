@@ -3,7 +3,6 @@ import 'package:test_1/datastore/news_fetch_datastore_interface.dart';
 import 'package:test_1/model/news_fetch_models.dart';
 import 'package:test_1/repository/news_repository_interface.dart';
 
-//repositoryはパイプ役datastoreとviewmodelの橋渡し
 class NewsRepository implements NewsRepositoryInterface {
   final NewsFetchDatastoreInterface datastore;
   NewsRepository({required this.datastore});
