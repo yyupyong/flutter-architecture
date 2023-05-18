@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:test_1/model/news_fetch_models.dart';
 import 'package:test_1/repository/news_repository_interface.dart';
 
@@ -15,6 +16,8 @@ class NewsViewModel {
       _news = data;
     } on Exception catch (exception) {
       rethrow;
+    } finally {
+      debugPrint("End fetchNewsData from viewModel.");
     }
   }
 }

@@ -15,7 +15,7 @@ class NewsRepository implements NewsRepositoryInterface {
     } on Exception catch (exception) {
       rethrow;
     } finally {
-      debugPrint("");
+      debugPrint("End fetchNewsData from repository.");
     }
   }
 }
